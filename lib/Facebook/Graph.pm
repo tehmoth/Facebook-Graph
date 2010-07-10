@@ -1,6 +1,6 @@
 package Facebook::Graph;
 
-use Moose;
+use Any::Moose;
 use Facebook::Graph::AccessToken;
 use Facebook::Graph::Authorize;
 use Facebook::Graph::Query;
@@ -75,7 +75,7 @@ sub query {
 }
 
 
-no Moose;
+no Any::Moose;
 __PACKAGE__->meta->make_immutable;
 
 =head1 NAME
@@ -152,7 +152,7 @@ B<NOTE:> The C<fetch> method is quick and dirty. Consider using C<query> (L<Face
 
 =head1 PREREQS
 
-L<Moose>
+L<Any::Moose>
 L<JSON>
 L<LWP>
 L<URI>
